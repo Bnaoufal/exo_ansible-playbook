@@ -1,0 +1,4 @@
+---
+
+- name: load variable
+  include_vars: vars.yml

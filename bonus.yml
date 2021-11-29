@@ -1,0 +1,11 @@
+---
+
+- name: bonus question book
+  hosts: localhost
+  connection: local
+  remote_user: root
+  become: yes
+
+  roles:
+    - load
+    - copy

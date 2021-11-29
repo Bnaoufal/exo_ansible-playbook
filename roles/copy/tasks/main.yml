@@ -1,0 +1,9 @@
+---
+
+- name: copy variable content to file
+  copy:
+    content: "{{ my_variable }}\n"
+    dest: /tmp/var_output.ansible
+    force: yes 
+  notify:
+    - restart myservice.service service

@@ -1,0 +1,7 @@
+---
+
+- name: restart myservice.service service
+  service: 
+    name: myservice.service
+    state: restarted
+  become: yes
